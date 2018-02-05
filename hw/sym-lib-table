@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name USB2517)(type Legacy)(uri /home/rayman/electronics/usbhub/hw/lib/USB2517.lib)(options "")(descr ""))
+)
