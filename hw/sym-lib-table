@@ -1,3 +1,7 @@
 (sym_lib_table
-  (lib (name USB2517)(type Legacy)(uri /home/rayman/electronics/usbhub/hw/lib/USB2517.lib)(options "")(descr ""))
+  (lib (name USB2517)(type Legacy)(uri ${KIPRJMOD}/lib/USB2517.lib)(options "")(descr ""))
+  (lib (name crystal_small_smd)(type Legacy)(uri ${KIPRJMOD}/lib/crystal_small_smd.lib)(options "")(descr ""))
+  (lib (name EFM32HG)(type Legacy)(uri ${KIPRJMOD}/lib/EFM32HG.lib)(options "")(descr ""))
+  (lib (name FSUSB31)(type Legacy)(uri /home/rayman/electronics/usbhub/hw/lib/FSUSB31.lib)(options "")(descr ""))
+  (lib (name MIC2026)(type Legacy)(uri /home/rayman/electronics/usbhub/hw/lib/MIC2026.lib)(options "")(descr ""))
 )
