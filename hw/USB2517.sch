@@ -547,7 +547,7 @@ Wire Wire Line
 	2300 1450 2300 1350
 Connection ~ 2300 1350
 Text Notes 600  950  0    50   ~ 0
-C_IN should be rated for at least 30v
+C5 should be rated for at least 30v
 $Comp
 L Device:R_Small R6
 U 1 1 5B9BBAB9
