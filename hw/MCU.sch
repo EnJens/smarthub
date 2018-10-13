@@ -25,4 +25,129 @@ F 3 "" H 4550 3250 50  0001 C CNN
 	1    4600 3250
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BB092EA
+P 4650 5050
+F 0 "#PWR?" H 4650 4800 50  0001 C CNN
+F 1 "GND" H 4655 4877 50  0000 C CNN
+F 2 "" H 4650 5050 50  0001 C CNN
+F 3 "" H 4650 5050 50  0001 C CNN
+	1    4650 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4400 4550 4950
+Wire Wire Line
+	4550 4950 4650 4950
+Wire Wire Line
+	4650 4950 4650 5050
+$Comp
+L USB2517:USB2517 U?
+U 2 1 5BB8A495
+P 7150 3650
+F 0 "U?" H 6823 3604 50  0000 R CNN
+F 1 "USB2517" H 6823 3695 50  0000 R CNN
+F 2 "" H 8250 5450 50  0001 C CNN
+F 3 "" H 8250 5450 50  0001 C CNN
+	2    7150 3650
+	-1   0    0    1   
+$EndComp
+Text Label 5600 3400 0    50   ~ 0
+USB_MCU_D+
+Text Label 5600 3500 0    50   ~ 0
+USB_MCU_D-
+NoConn ~ 6700 3700
+NoConn ~ 6700 3800
+NoConn ~ 6700 3900
+Wire Wire Line
+	5450 3000 6200 3000
+Wire Wire Line
+	5450 3100 6200 3100
+Text Label 5550 3000 0    50   ~ 0
+MCU_SWDIO
+Text Label 5550 3100 0    50   ~ 0
+MCU_SWDCLK
+Wire Wire Line
+	6700 3600 5450 3600
+Text Label 5600 3600 0    50   ~ 0
+VBUSDETECT
+Text HLabel 3350 2500 0    50   Input ~ 0
+PORT2_PWR
+Text HLabel 3350 2600 0    50   Input ~ 0
+PORT2_PWR
+Text HLabel 3350 2700 0    50   Input ~ 0
+PORT2_PWR
+Text HLabel 3350 2800 0    50   Input ~ 0
+PORT2_PWR
+Text HLabel 3350 3500 0    50   Input ~ 0
+PORT2_EN
+Text HLabel 3350 3600 0    50   Input ~ 0
+PORT2_EN
+Text HLabel 3350 3700 0    50   Input ~ 0
+PORT2_EN
+Text HLabel 3350 3800 0    50   Input ~ 0
+PORT2_EN
+Wire Wire Line
+	3800 3500 3350 3500
+Wire Wire Line
+	3350 3600 3800 3600
+Wire Wire Line
+	3800 3700 3350 3700
+Wire Wire Line
+	3800 3800 3350 3800
+Wire Wire Line
+	3350 2500 3800 2500
+Wire Wire Line
+	3350 2600 3800 2600
+Wire Wire Line
+	3350 2700 3800 2700
+Wire Wire Line
+	3800 2800 3350 2800
+$Comp
+L Device:C_Small C?
+U 1 1 5BC29C29
+P 4650 4600
+F 0 "C?" H 4742 4646 50  0000 L CNN
+F 1 "C_Small" H 4742 4555 50  0000 L CNN
+F 2 "" H 4650 4600 50  0001 C CNN
+F 3 "~" H 4650 4600 50  0001 C CNN
+	1    4650 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4400 4650 4500
+Wire Wire Line
+	4650 4700 4650 4950
+Connection ~ 4650 4950
+$Comp
+L Device:R_Small R?
+U 1 1 5BC2A861
+P 6350 3400
+F 0 "R?" V 6154 3400 50  0000 C CNN
+F 1 "27R" V 6245 3400 50  0000 C CNN
+F 2 "" H 6350 3400 50  0001 C CNN
+F 3 "~" H 6350 3400 50  0001 C CNN
+	1    6350 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BC2A890
+P 6350 3500
+F 0 "R?" V 6500 3500 50  0000 C CNN
+F 1 "27R" V 6600 3500 50  0000 C CNN
+F 2 "" H 6350 3500 50  0001 C CNN
+F 3 "~" H 6350 3500 50  0001 C CNN
+	1    6350 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 3400 6450 3400
+Wire Wire Line
+	6700 3500 6450 3500
+Wire Wire Line
+	6250 3500 5450 3500
+Wire Wire Line
+	6250 3400 5450 3400
 $EndSCHEMATC

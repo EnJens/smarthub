@@ -422,40 +422,36 @@ Wire Wire Line
 	2300 1350 2300 1250
 Text Label 3800 1700 0    50   ~ 0
 VBUS
-Text Label 750  2300 0    50   ~ 0
+Text Label 650  2250 0    50   ~ 0
 VBUS
 $Comp
 L Device:R_Small R0
 U 1 1 5B990046
-P 1100 2300
-F 0 "R0" V 1100 2300 50  0000 C CNN
-F 1 "0R" V 995 2300 50  0000 C CNN
-F 2 "" H 1100 2300 50  0001 C CNN
-F 3 "~" H 1100 2300 50  0001 C CNN
-	1    1100 2300
+P 1300 2250
+F 0 "R0" V 1300 2250 50  0000 C CNN
+F 1 "0R" V 1350 2100 50  0000 C CNN
+F 2 "" H 1300 2250 50  0001 C CNN
+F 3 "~" H 1300 2250 50  0001 C CNN
+	1    1300 2250
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR010
 U 1 1 5B990107
-P 1450 2200
-F 0 "#PWR010" H 1450 2050 50  0001 C CNN
-F 1 "+5V" H 1465 2373 50  0000 C CNN
-F 2 "" H 1450 2200 50  0001 C CNN
-F 3 "" H 1450 2200 50  0001 C CNN
-	1    1450 2200
-	1    0    0    -1  
+P 1550 2250
+F 0 "#PWR010" H 1550 2100 50  0001 C CNN
+F 1 "+5V" H 1565 2423 50  0000 C CNN
+F 2 "" H 1550 2250 50  0001 C CNN
+F 3 "" H 1550 2250 50  0001 C CNN
+	1    1550 2250
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	750  2300 1000 2300
+	650  2250 1200 2250
 Wire Wire Line
-	1200 2300 1450 2300
-Wire Wire Line
-	1450 2300 1450 2200
+	1400 2250 1550 2250
 Wire Notes Line
 	2500 2500 550  2500
-Wire Notes Line
-	550  2500 550  750 
 Wire Notes Line
 	550  750  2500 750 
 Wire Notes Line
@@ -503,8 +499,6 @@ Wire Notes Line
 	2650 2600 2650 3850
 Wire Notes Line
 	2650 3850 550  3850
-Wire Notes Line
-	550  3850 550  2600
 $Comp
 L Device:C_Small C6
 U 1 1 5B9A565D
@@ -516,8 +510,6 @@ F 3 "~" H 2300 1550 50  0001 C CNN
 	1    2300 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 1750 1500 1750
 $Comp
 L Device:C_Small C5
 U 1 1 5B9A7452
@@ -536,7 +528,6 @@ Wire Wire Line
 	1500 1350 1600 1350
 Wire Wire Line
 	1500 1650 1500 1750
-Connection ~ 1500 1750
 Wire Wire Line
 	1500 1750 1900 1750
 Wire Wire Line
@@ -547,7 +538,7 @@ Wire Wire Line
 	2300 1450 2300 1350
 Connection ~ 2300 1350
 Text Notes 600  950  0    50   ~ 0
-C5 should be rated for at least 30v
+C5 should be rated for at least 16v
 $Comp
 L Device:R_Small R6
 U 1 1 5B9BBAB9
@@ -958,4 +949,81 @@ Wire Wire Line
 Wire Wire Line
 	4550 2550 4400 2550
 Connection ~ 4550 2550
+Text Label 650  1900 0    50   ~ 0
+LOCAL_PWR
+$Comp
+L Device:R_Small R12
+U 1 1 5BABDBC0
+P 1300 1900
+F 0 "R12" V 1300 1900 50  0000 C CNN
+F 1 "10k" V 1350 1750 50  0000 C CNN
+F 2 "" H 1300 1900 50  0001 C CNN
+F 3 "~" H 1300 1900 50  0001 C CNN
+	1    1300 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR049
+U 1 1 5BAC2D8D
+P 1550 1900
+F 0 "#PWR049" H 1550 1750 50  0001 C CNN
+F 1 "+5V" H 1565 2073 50  0000 C CNN
+F 2 "" H 1550 1900 50  0001 C CNN
+F 3 "" H 1550 1900 50  0001 C CNN
+	1    1550 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1200 1900 1000 1900
+Wire Wire Line
+	1400 1900 1550 1900
+Wire Notes Line
+	550  900  550  3850
+$Comp
+L Device:R_Small R13
+U 1 1 5BADCB28
+P 1300 2050
+F 0 "R13" V 1300 2050 50  0000 C CNN
+F 1 "10k" V 1350 1900 50  0000 C CNN
+F 2 "" H 1300 2050 50  0001 C CNN
+F 3 "~" H 1300 2050 50  0001 C CNN
+	1    1300 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR050
+U 1 1 5BADCBF7
+P 1550 2050
+F 0 "#PWR050" H 1550 1800 50  0001 C CNN
+F 1 "GND" V 1555 1922 50  0000 R CNN
+F 2 "" H 1550 2050 50  0001 C CNN
+F 3 "" H 1550 2050 50  0001 C CNN
+	1    1550 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1550 2050 1400 2050
+Wire Wire Line
+	1200 2050 1000 2050
+Wire Wire Line
+	1000 2050 1000 1900
+Connection ~ 1000 1900
+Wire Wire Line
+	1000 1900 650  1900
+Wire Wire Line
+	1350 1750 1500 1750
+Connection ~ 1500 1750
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5BAFE3BA
+P 1500 1250
+F 0 "#FLG0101" H 1500 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 1500 1424 50  0000 C CNN
+F 2 "" H 1500 1250 50  0001 C CNN
+F 3 "~" H 1500 1250 50  0001 C CNN
+	1    1500 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1250 1500 1350
 $EndSCHEMATC
