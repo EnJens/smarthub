@@ -4,4 +4,6 @@
   (lib (name EFM32HG)(type Legacy)(uri ${KIPRJMOD}/lib/EFM32HG.lib)(options "")(descr ""))
   (lib (name FSUSB31)(type Legacy)(uri /home/rayman/electronics/usbhub/hw/lib/FSUSB31.lib)(options "")(descr ""))
   (lib (name MIC2026)(type Legacy)(uri /home/rayman/electronics/usbhub/hw/lib/MIC2026.lib)(options "")(descr ""))
+  (lib (name Power_Extra)(type Legacy)(uri /home/rayman/electronics/usbhub/hw/lib/Power_Extra.lib)(options "")(descr ""))
+  (lib (name LED_Extra)(type Legacy)(uri /home/rayman/electronics/usbhub/hw/lib/LED_Extra.lib)(options "")(descr ""))
 )
