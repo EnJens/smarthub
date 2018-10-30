@@ -1,4 +1,4 @@
-(module LED_RGB_0606_1616Metric (layer F.Cu) (tedit 5BD6081C)
+(module LED_RGB_0606_1616Metric (layer F.Cu) (tedit 5BD8CFCB)
   (descr "RGB LED 0606 smd package common annode")
   (tags "RGB LED led 0606 SMD smd SMT smt smdled SMDLED smtled SMTLED")
   (attr smd)
@@ -27,14 +27,9 @@
   (pad 4 smd rect (at 0.8 -0.4 180) (size 0.8 0.6) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -0.8 0.4 180) (size 0.8 0.6) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd rect (at 0.8 0.4 180) (size 0.8 0.6) (layers F.Cu F.Paste F.Mask))
-  (model ${KISYS3DMOD}/LEDs.3dshapes/LED_0603.wrl
+  (model "${KIPRJMOD}/lib/3dpackages/LED 0606 tri-color.stp"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 180))
-  )
-  (model ${KISYS3DMOD}/LEDs.3dshapes/LED_0603.wrl
-    (offset (xyz 0 -0.7999999879852057 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 180))
+    (rotate (xyz 0 0 -90))
   )
 )

@@ -185,9 +185,11 @@ Connection ~ 7350 3000
 Wire Wire Line
 	7350 3000 7300 3000
 $Comp
-L Regulator_Linear:MIC5219-3.3 U1
+L Regulator_Linear:MIC5219-3.3YM5 U1
 U 1 1 5B95DE23
 P 2000 4600
+AR Path="/5B95DE23" Ref="U1"  Part="1" 
+AR Path="/5A7CEC76/5B95DE23" Ref="U1"  Part="1" 
 F 0 "U1" H 2000 4942 50  0000 C CNN
 F 1 "MIC5219-3.3" H 2000 4851 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2000 4925 50  0001 C CNN
@@ -320,19 +322,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 5000 2000 5000
 $Comp
-L Connector:Barrel_Jack J1
-U 1 1 5B980A1C
-P 1300 2950
-F 0 "J1" H 1355 3275 50  0000 C CNN
-F 1 "Barrel_Jack" H 1355 3184 50  0000 C CNN
-F 2 "" H 1350 2910 50  0001 C CNN
-F 3 "~" H 1350 2910 50  0001 C CNN
-	1    1300 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 2850 1750 2850
-$Comp
 L power:GND #PWR08
 U 1 1 5B988430
 P 2150 3300
@@ -437,7 +426,7 @@ Wire Wire Line
 	8800 4900 8800 4600
 Connection ~ 8800 4900
 Text Notes 1000 4200 0    50   ~ 0
-Power for MCU and USB HUB
+Power for USB HUB
 Wire Notes Line
 	800  4100 2900 4100
 Wire Notes Line
@@ -1269,88 +1258,13 @@ Wire Wire Line
 Connection ~ 1550 1250
 Wire Wire Line
 	1550 1250 1150 1250
-$Comp
-L Connector:USB_C_Receptacle J2
-U 1 1 5BE19532
-P 5700 3900
-F 0 "J2" H 5805 5467 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 5805 5376 50  0000 C CNN
-F 2 "USB_C:USB_C_Receptacle_GT-USB-7010" H 5850 3900 50  0001 C CNN
-F 3 "http://www.usb.org/developers/docs/usb_31_033017.zip" H 5850 3900 50  0001 C CNN
-	1    5700 3900
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6300 3900
-NoConn ~ 6300 4000
-NoConn ~ 6300 4200
-NoConn ~ 6300 4300
-NoConn ~ 6300 4500
-NoConn ~ 6300 4600
-NoConn ~ 6300 4800
-NoConn ~ 6300 4900
-NoConn ~ 6300 5100
-NoConn ~ 6300 5200
-$Comp
-L power:GND #PWR064
-U 1 1 5BE966B3
-P 5800 5950
-F 0 "#PWR064" H 5800 5700 50  0001 C CNN
-F 1 "GND" H 5805 5777 50  0000 C CNN
-F 2 "" H 5800 5950 50  0001 C CNN
-F 3 "" H 5800 5950 50  0001 C CNN
-	1    5800 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 5500 5800 5700
-Wire Wire Line
-	5400 5500 5400 5700
-Wire Wire Line
-	5400 5700 5500 5700
-Connection ~ 5800 5700
-Wire Wire Line
-	5800 5700 5800 5950
-Wire Wire Line
-	5500 5500 5500 5700
-Connection ~ 5500 5700
-Wire Wire Line
-	5500 5700 5600 5700
-Wire Wire Line
-	5600 5500 5600 5700
-Connection ~ 5600 5700
-Wire Wire Line
-	5600 5700 5700 5700
-Wire Wire Line
-	5700 5550 5700 5700
-Connection ~ 5700 5700
-Wire Wire Line
-	5700 5700 5800 5700
 Wire Wire Line
 	6300 3500 6450 3500
 Wire Wire Line
 	6300 3600 6450 3600
 Wire Wire Line
 	7050 3000 7050 2900
-Wire Wire Line
-	7050 2900 6450 2900
 Connection ~ 7050 3000
-Wire Wire Line
-	6450 2900 6450 2800
-Wire Wire Line
-	6450 2600 6300 2600
-Connection ~ 6450 2900
-Wire Wire Line
-	6450 2900 6300 2900
-Wire Wire Line
-	6300 2700 6450 2700
-Connection ~ 6450 2700
-Wire Wire Line
-	6450 2700 6450 2600
-Wire Wire Line
-	6300 2800 6450 2800
-Connection ~ 6450 2800
-Wire Wire Line
-	6450 2800 6450 2700
 Wire Wire Line
 	6300 3400 6450 3400
 Wire Wire Line
@@ -1411,4 +1325,55 @@ Wire Wire Line
 Connection ~ 6700 3200
 Wire Wire Line
 	6700 3200 6700 3300
+$Comp
+L Connector:Barrel_Jack_Switch J1
+U 1 1 5BD9F088
+P 1150 2950
+F 0 "J1" H 1205 3267 50  0000 C CNN
+F 1 "EXT_PWR" H 1205 3176 50  0000 C CNN
+F 2 "Connector_BarrelJack_Extra:Boom_Precision_Elec_DC-005_5.5-2.0MM" H 1200 2910 50  0001 C CNN
+F 3 "~" H 1200 2910 50  0001 C CNN
+	1    1150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J2
+U 1 1 5BDA05D7
+P 5700 3500
+F 0 "J2" H 5805 4367 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 5805 4276 50  0000 C CNN
+F 2 "USB_C:USB_C_Receptacle_GT-USB-7010" H 5850 3500 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5850 3500 50  0001 C CNN
+	1    5700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2900 7050 2900
+NoConn ~ 6300 4000
+NoConn ~ 6300 4100
+$Comp
+L power:GND #PWR064
+U 1 1 5BDE08D3
+P 5700 4650
+F 0 "#PWR064" H 5700 4400 50  0001 C CNN
+F 1 "GND" H 5705 4477 50  0000 C CNN
+F 2 "" H 5700 4650 50  0001 C CNN
+F 3 "" H 5700 4650 50  0001 C CNN
+	1    5700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4400 5700 4550
+Wire Wire Line
+	5700 4550 5400 4550
+Wire Wire Line
+	5400 4550 5400 4400
+Connection ~ 5700 4550
+Wire Wire Line
+	5700 4550 5700 4650
+Wire Wire Line
+	1450 2850 1750 2850
+Wire Wire Line
+	1600 3050 1450 3050
+NoConn ~ 1450 2950
 $EndSCHEMATC

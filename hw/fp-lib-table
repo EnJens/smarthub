@@ -4,4 +4,5 @@
   (lib (name USB_A_Female_Vertical)(type KiCad)(uri ${KIPRJMOD}/lib/USB_A_Female_Vertical.pretty)(options "")(descr ""))
   (lib (name Package_US8)(type KiCad)(uri ${KIPRJMOD}/lib/Package_US8.pretty)(options "")(descr ""))
   (lib (name USB_C)(type KiCad)(uri ${KIPRJMOD}/lib/USB_C.pretty)(options "")(descr ""))
+  (lib (name Connector_BarrelJack_Extra)(type KiCad)(uri ${KIPRJMOD}/lib/Connector_BarrelJack_Extra)(options "")(descr ""))
 )

@@ -1,4 +1,4 @@
-(module QFN-32_EP_6x6_Pitch0.65mm (layer F.Cu) (tedit 5A7F9A3E)
+(module QFN-32_EP_6x6_Pitch0.65mm (layer F.Cu) (tedit 5BD8CD02)
   (attr smd)
   (fp_text reference REF** (at 0 -4.5) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -129,4 +129,9 @@
   (pad 33 thru_hole circle (at 1.76 0) (size 0.44 0.44) (drill 0.22) (layers *.Cu *.Mask))
   (pad 33 thru_hole circle (at 1.76 0.88) (size 0.44 0.44) (drill 0.22) (layers *.Cu *.Mask))
   (pad 33 thru_hole circle (at 1.76 1.76) (size 0.44 0.44) (drill 0.22) (layers *.Cu *.Mask))
+  (model ${KISYS3DMOD}/Package_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm.step
+    (at (xyz 0 0 0))
+    (scale (xyz 1.3 1.3 1))
+    (rotate (xyz 0 0 0))
+  )
 )
