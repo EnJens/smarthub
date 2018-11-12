@@ -1376,4 +1376,6 @@ Wire Wire Line
 Wire Wire Line
 	1600 3050 1450 3050
 NoConn ~ 1450 2950
+Text Label 1550 2850 1    50   ~ 0
+EXT_PWR
 $EndSCHEMATC

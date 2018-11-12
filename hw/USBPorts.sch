@@ -167,10 +167,6 @@ F 3 " ~" H 5050 1750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4150 2350 4450 2350
-Wire Wire Line
-	4450 2350 4450 2000
-Wire Wire Line
 	4450 2000 4600 2000
 $Comp
 L power:GND #PWR027
@@ -297,11 +293,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 3350 3100 3350
 Wire Wire Line
-	4250 3550 4250 2550
-Wire Wire Line
-	4250 2550 4150 2550
-Wire Wire Line
-	4250 3550 4400 3550
+	4350 3550 4400 3550
 $Comp
 L Power_Management:MIC2026-2BM U9
 U 1 1 5B95DC59
@@ -324,10 +316,6 @@ F 3 " ~" H 5050 4650 50  0001 C CNN
 	1    4900 4700
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4150 5250 4450 5250
-Wire Wire Line
-	4450 5250 4450 4900
 Wire Wire Line
 	4450 4900 4600 4900
 $Comp
@@ -400,11 +388,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 6250 3100 6250
 Wire Wire Line
-	4250 6450 4250 5450
-Wire Wire Line
-	4250 5450 4150 5450
-Wire Wire Line
-	4250 6450 4450 6450
+	4350 6450 4450 6450
 Wire Wire Line
 	5350 4050 5000 4050
 Connection ~ 5000 4050
@@ -467,9 +451,6 @@ Wire Wire Line
 	4400 3550 4600 3550
 Wire Wire Line
 	4450 2700 4450 2850
-Wire Wire Line
-	4450 2500 4450 2350
-Connection ~ 4450 2350
 $Comp
 L Device:C_Small C13
 U 1 1 5B96D3CC
@@ -523,9 +504,6 @@ Wire Wire Line
 	4450 6950 4450 6800
 Wire Wire Line
 	4450 5700 4450 5600
-Wire Wire Line
-	4450 5400 4450 5250
-Connection ~ 4450 5250
 Text HLabel 2500 2450 0    50   Input ~ 0
 ~PORT3_EN~
 Wire Wire Line
@@ -824,4 +802,74 @@ Text HLabel 2550 5350 0    50   Input ~ 0
 Wire Wire Line
 	2700 5350 2550 5350
 Connection ~ 2700 5350
+Text Label 3250 3250 1    50   ~ 0
+USB3_D-
+Text Label 3250 3350 3    50   ~ 0
+USB_D+
+Text Label 3300 1700 1    50   ~ 0
+USB2_D-
+Text Label 3300 1800 3    50   ~ 0
+USB2_D+
+Text Label 3250 4600 1    50   ~ 0
+USB4_D-
+Text Label 3250 4700 3    50   ~ 0
+USB4_D+
+Text Label 3200 6250 3    50   ~ 0
+USB5_D+
+Text Label 3200 6150 1    50   ~ 0
+USB5_D-
+Text Label 1950 6150 0    50   ~ 0
+HUB5_D-
+Text Label 1950 6250 0    50   ~ 0
+HUB5_D+
+Text Label 1950 4600 0    50   ~ 0
+HUB4_D-
+Text Label 1950 4700 0    50   ~ 0
+HUB4_D+
+Text Label 1950 3350 0    50   ~ 0
+HUB3_D+
+Text Label 1950 3250 0    50   ~ 0
+HUB3_D-
+Text Label 1950 1700 0    50   ~ 0
+HUB2_D-
+Text Label 1950 1800 0    50   ~ 0
+HUB2_D+
+Text Label 4450 2250 0    50   ~ 0
+USB2_VBUS
+Text Label 4350 2700 3    50   ~ 0
+USB3_VBUS
+Text Label 4450 5150 0    50   ~ 0
+USB4_VBUS
+Text Label 4350 5950 1    50   ~ 0
+USB5_VBUS
+Wire Wire Line
+	4450 4900 4450 5200
+Wire Wire Line
+	4350 5250 4150 5250
+Wire Wire Line
+	4350 5250 4350 6450
+Wire Wire Line
+	4150 5450 4250 5450
+Wire Wire Line
+	4250 5450 4250 5200
+Wire Wire Line
+	4250 5200 4450 5200
+Connection ~ 4450 5200
+Wire Wire Line
+	4450 5200 4450 5400
+Wire Wire Line
+	4450 2000 4450 2300
+Wire Wire Line
+	4150 2350 4350 2350
+Wire Wire Line
+	4350 2350 4350 3550
+Wire Wire Line
+	4150 2550 4250 2550
+Wire Wire Line
+	4250 2550 4250 2300
+Wire Wire Line
+	4250 2300 4450 2300
+Connection ~ 4450 2300
+Wire Wire Line
+	4450 2300 4450 2500
 $EndSCHEMATC
