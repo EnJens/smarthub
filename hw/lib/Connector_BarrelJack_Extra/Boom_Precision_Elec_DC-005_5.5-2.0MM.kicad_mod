@@ -1,4 +1,4 @@
-(module Boom_Precision_Elec_DC-005_5.5-2.0MM (layer F.Cu) (tedit 5BD8C81D)
+(module Boom_Precision_Elec_DC-005_5.5-2.0MM (layer F.Cu) (tedit 5BFEBCB7)
   (descr "Boom Precision Electric (5.5mm outher diameter, inner diameter 2.00mm) https://datasheet.lcsc.com/szlcsc/Boom-Precision-Elec-DC-005-5-5-2-0MM_C16214.pdf")
   (tags "connector barrel jack")
   (fp_text reference REF** (at 0 -2.5) (layer F.SilkS)
@@ -31,9 +31,9 @@
   (fp_line (start -4.5 0.1) (end -3.5 -0.9) (layer F.Fab) (width 0.1))
   (fp_line (start 4.6 5.2) (end 4.6 13.7) (layer F.SilkS) (width 0.12))
   (fp_line (start 5 14.1) (end 5 5.5) (layer F.CrtYd) (width 0.05))
-  (pad 3 thru_hole rect (at 0 0) (size 4.4 1.8) (drill oval 3.4 0.8) (layers *.Cu *.Mask))
+  (pad 1 thru_hole rect (at 0 0) (size 4.4 1.8) (drill oval 3.4 0.8) (layers *.Cu *.Mask))
   (pad 2 thru_hole oval (at 0 6) (size 4 1.8) (drill oval 3 0.8) (layers *.Cu *.Mask))
-  (pad 1 thru_hole oval (at 4.8 3 90) (size 4 1.8) (drill oval 3 0.8) (layers *.Cu *.Mask))
+  (pad 3 thru_hole oval (at 4.8 3 90) (size 4 1.8) (drill oval 3 0.8) (layers *.Cu *.Mask))
   (model ${KIPRJMOD}/lib/3dpackages/DC005.stp
     (offset (xyz 0 -10.5 6))
     (scale (xyz 1 1.05 1))
