@@ -72,30 +72,28 @@ Wire Wire Line
 	6700 3600 5450 3600
 Text Label 5600 3600 0    50   ~ 0
 VBUSDETECT
-Text HLabel 3250 2500 0    50   Input ~ 0
+Text HLabel 5995 2800 2    50   Input ~ 0
 PORT2_PWR
-Text HLabel 3250 2600 0    50   Input ~ 0
+Text HLabel 5995 2700 2    50   Input ~ 0
 PORT3_PWR
-Text HLabel 3250 2800 0    50   Input ~ 0
+Text HLabel 5995 2600 2    50   Input ~ 0
 PORT4_PWR
-Text HLabel 3250 2900 0    50   Input ~ 0
+Text HLabel 6000 2500 2    50   Input ~ 0
 PORT5_PWR
 Text HLabel 3350 3500 0    50   Input ~ 0
 PORT2_EN
 Text HLabel 3350 3600 0    50   Input ~ 0
 PORT3_EN
-Text HLabel 3350 3700 0    50   Input ~ 0
-PORT4_EN
 Text HLabel 3350 3800 0    50   Input ~ 0
+PORT4_EN
+Text HLabel 5900 3700 2    50   Input ~ 0
 PORT5_EN
 Wire Wire Line
 	3800 3500 3350 3500
 Wire Wire Line
 	3350 3600 3800 3600
 Wire Wire Line
-	3800 3700 3350 3700
-Wire Wire Line
-	3800 3800 3350 3800
+	5450 3700 5900 3700
 $Comp
 L Device:C_Small C15
 U 1 1 5BC29C29
@@ -407,12 +405,6 @@ Wire Wire Line
 	4950 2100 5400 2100
 NoConn ~ 3800 3100
 NoConn ~ 3800 3000
-NoConn ~ 5450 3700
-NoConn ~ 5450 2900
-NoConn ~ 5450 2800
-NoConn ~ 5450 2700
-NoConn ~ 5450 2600
-NoConn ~ 5450 2500
 NoConn ~ 3800 2700
 Wire Wire Line
 	5500 1800 6500 1800
@@ -455,16 +447,67 @@ F 3 "" H 5500 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 1800 5500 1750
-Wire Wire Line
-	3250 2600 3800 2600
-Wire Wire Line
-	3250 2500 3800 2500
-Wire Wire Line
-	3250 2800 3800 2800
-Wire Wire Line
-	3250 2900 3800 2900
 Text Label 3750 3400 2    50   ~ 0
 ~MCU_RESET~
 Wire Wire Line
 	2950 3400 2800 3400
+Wire Wire Line
+	3800 3800 3350 3800
+NoConn ~ 3800 3700
+Wire Wire Line
+	6000 2500 5450 2500
+Wire Wire Line
+	6000 2600 5450 2600
+Wire Wire Line
+	6000 2700 5450 2700
+Wire Wire Line
+	6000 2800 5450 2800
+NoConn ~ 5450 2900
+NoConn ~ 3800 2900
+NoConn ~ 3800 2800
+$Comp
+L Connector_Generic:Conn_01x04 J10
+U 1 1 5C07D882
+P 3100 2600
+F 0 "J10" H 3100 2300 50  0000 C CNN
+F 1 "DBG_UART" V 3200 2550 50  0000 C CNN
+F 2 "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" H 3100 2600 50  0001 C CNN
+F 3 "~" H 3100 2600 50  0001 C CNN
+	1    3100 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 2500 3300 2500
+Wire Wire Line
+	3800 2600 3300 2600
+$Comp
+L power:GND #PWR066
+U 1 1 5C080544
+P 3350 2750
+F 0 "#PWR066" H 3350 2500 50  0001 C CNN
+F 1 "GND" H 3355 2577 50  0000 C CNN
+F 2 "" H 3350 2750 50  0001 C CNN
+F 3 "" H 3350 2750 50  0001 C CNN
+	1    3350 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2700 3350 2700
+Wire Wire Line
+	3350 2700 3350 2750
+$Comp
+L Power_Extra:VDDMCU #PWR061
+U 1 1 5C081E76
+P 3350 2300
+F 0 "#PWR061" H 3350 2150 50  0001 C CNN
+F 1 "VDDMCU" H 3365 2473 50  0000 C CNN
+F 2 "" H 3350 2300 50  0001 C CNN
+F 3 "" H 3350 2300 50  0001 C CNN
+	1    3350 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2400 3350 2400
+Wire Wire Line
+	3350 2400 3350 2300
 $EndSCHEMATC
