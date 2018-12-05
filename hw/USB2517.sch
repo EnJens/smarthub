@@ -390,8 +390,6 @@ Wire Notes Line
 	800  2250 2750 2250
 Wire Notes Line
 	2750 2250 2750 4000
-Text Notes 850  2350 0    50   ~ 0
-Place either R0 or LM1085
 Text Notes 850  3950 0    50   ~ 0
 R0 must be able to handle 500mA at least
 $Comp
@@ -471,15 +469,15 @@ Wire Wire Line
 Wire Wire Line
 	2550 2950 2550 2850
 Connection ~ 2550 2850
-Text Notes 850  2450 0    50   ~ 0
+Text Notes 850  2350 0    50   ~ 0
 C5 should be rated for at least 16v
 $Comp
 L Device:R_Small R6
 U 1 1 5B9BBAB9
 P 10300 3400
 F 0 "R6" V 10404 3400 50  0000 C CNN
-F 1 "DNP" V 10495 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" H 10300 3400 50  0001 C CNN
+F 1 "10k" V 10495 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10300 3400 50  0001 C CNN
 F 3 "~" H 10300 3400 50  0001 C CNN
 	1    10300 3400
 	0    1    1    0   
@@ -489,7 +487,7 @@ L Device:R_Small R5
 U 1 1 5B9BBB2B
 P 9850 3150
 F 0 "R5" H 9791 3104 50  0000 R CNN
-F 1 "10k" H 9791 3195 50  0000 R CNN
+F 1 "DNP" H 9791 3195 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9850 3150 50  0001 C CNN
 F 3 "~" H 9850 3150 50  0001 C CNN
 	1    9850 3150
@@ -603,7 +601,7 @@ L Device:R_Small R7
 U 1 1 5B9FC182
 P 10150 3150
 F 0 "R7" H 10091 3104 50  0000 R CNN
-F 1 "10k" H 10091 3195 50  0000 R CNN
+F 1 "DNP" H 10091 3195 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 10150 3150 50  0001 C CNN
 F 3 "~" H 10150 3150 50  0001 C CNN
 	1    10150 3150
@@ -625,7 +623,7 @@ L Memory_EEPROM:24LC02 U4
 U 1 1 5BA1453F
 P 9400 1450
 F 0 "U4" H 9200 1200 50  0000 C CNN
-F 1 "24LC02" H 9150 1700 50  0000 C CNN
+F 1 "DNP/24LC02" H 9150 1700 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9400 1450 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21709c.pdf" H 9400 1450 50  0001 C CNN
 	1    9400 1450
@@ -701,24 +699,20 @@ Wire Wire Line
 $Comp
 L power:GND #PWR016
 U 1 1 5BA4DFC3
-P 9950 1650
-F 0 "#PWR016" H 9950 1400 50  0001 C CNN
-F 1 "GND" H 9955 1477 50  0000 C CNN
-F 2 "" H 9950 1650 50  0001 C CNN
-F 3 "" H 9950 1650 50  0001 C CNN
-	1    9950 1650
+P 10150 1600
+F 0 "#PWR016" H 10150 1350 50  0001 C CNN
+F 1 "GND" H 10155 1427 50  0000 C CNN
+F 2 "" H 10150 1600 50  0001 C CNN
+F 3 "" H 10150 1600 50  0001 C CNN
+	1    10150 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9950 1550 9950 1650
-Wire Wire Line
-	9800 1550 9950 1550
 $Comp
 L Device:C_Small C8
 U 1 1 5BA597A5
 P 9650 1000
 F 0 "C8" V 9421 1000 50  0000 C CNN
-F 1 "0.1uF" V 9512 1000 50  0000 C CNN
+F 1 "DNP" V 9512 1000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9650 1000 50  0001 C CNN
 F 3 "~" H 9650 1000 50  0001 C CNN
 	1    9650 1000
@@ -1146,14 +1140,14 @@ Wire Wire Line
 	6450 3400 6450 3500
 Connection ~ 6450 3500
 Wire Wire Line
-	6450 3500 7800 3500
+	6450 3500 6850 3500
 Wire Wire Line
 	6300 3700 6450 3700
 Wire Wire Line
 	6450 3700 6450 3600
 Connection ~ 6450 3600
 Wire Wire Line
-	6450 3600 7800 3600
+	6450 3600 6850 3600
 $Comp
 L Device:R_Small R29
 U 1 1 5BF78F18
@@ -1371,4 +1365,117 @@ VDD18
 Wire Wire Line
 	2700 1250 2700 1350
 Connection ~ 2700 1250
+Text Notes 4000 750  0    50   ~ 0
+Strap options
+Text Notes 4000 900  0    50   ~ 0
+CFG0_SEL
+Text Notes 4000 1050 0    50   ~ 0
+CFG1_SEL
+Text Notes 4000 1200 0    50   ~ 0
+CFG2_SEL
+Text Notes 4700 750  0    50   ~ 0
+1
+Text Notes 4900 750  0    50   ~ 0
+0
+Text Notes 4700 1050 0    50   ~ 0
+R8
+Text Notes 4900 1050 0    50   ~ 0
+R9
+Text Notes 4700 1200 0    50   ~ 0
+R10
+Text Notes 4900 1200 0    50   ~ 0
+R11
+Text Notes 4900 900  0    50   ~ 0
+R6
+Text Notes 4700 900  0    50   ~ 0
+R5
+Wire Notes Line
+	3950 650  5100 650 
+Wire Notes Line
+	5100 650  5100 1250
+Wire Notes Line
+	5100 1250 3950 1250
+Wire Notes Line
+	3950 1250 3950 650 
+Wire Notes Line
+	4600 650  4600 1250
+Wire Notes Line
+	4850 650  4850 1250
+Wire Notes Line
+	3950 800  5100 800 
+Wire Notes Line
+	5100 950  3950 950 
+Wire Notes Line
+	3950 1100 5100 1100
+Text Notes 3950 1600 0    50   ~ 0
+Internal default, dynamic power: 0,0,1\nEEPROM: 1,1,0\nFor EEPROM: Mount C8, R5, R7, U4\nRemove R6
+Text Notes 850  1900 0    50   ~ 0
+Self-powered: Mount U2, C5, C6, R13\nRemove: R0, R13\n
+Text Notes 850  2150 0    50   ~ 0
+BUS Powered (Might not work):\nMount R0,R12\nRemove U2, C6, R13\n
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5C0DAAB2
+P 10400 1350
+F 0 "TP1" V 10400 1537 50  0000 L CNN
+F 1 "EEPROM_SDA" V 10445 1538 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10600 1350 50  0001 C CNN
+F 3 "~" H 10600 1350 50  0001 C CNN
+	1    10400 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5C0DB81C
+P 10400 1450
+F 0 "TP2" V 10400 1700 50  0000 C CNN
+F 1 "EEPROM_SCL" V 10400 1950 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10600 1450 50  0001 C CNN
+F 3 "~" H 10600 1450 50  0001 C CNN
+	1    10400 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10150 1550 10150 1600
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5C12FA8F
+P 6850 3500
+F 0 "TP5" H 6908 3574 50  0000 L CNN
+F 1 "USB_UP_D-" V 6895 3688 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7050 3500 50  0001 C CNN
+F 3 "~" H 7050 3500 50  0001 C CNN
+	1    6850 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 3500
+Wire Wire Line
+	6850 3500 7800 3500
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5C12FD0C
+P 6850 3600
+F 0 "TP6" H 6792 3673 50  0000 R CNN
+F 1 "USBUP_D+" V 6895 3788 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7050 3600 50  0001 C CNN
+F 3 "~" H 7050 3600 50  0001 C CNN
+	1    6850 3600
+	-1   0    0    1   
+$EndComp
+Connection ~ 6850 3600
+Wire Wire Line
+	6850 3600 7800 3600
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5C1307F5
+P 7350 3000
+F 0 "TP4" H 7408 3074 50  0000 L CNN
+F 1 "VBUS_DET" V 7395 3188 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7550 3000 50  0001 C CNN
+F 3 "~" H 7550 3000 50  0001 C CNN
+	1    7350 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1550 10150 1550
 $EndSCHEMATC

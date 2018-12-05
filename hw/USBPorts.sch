@@ -728,7 +728,7 @@ Text HLabel 2550 4000 0    50   Input ~ 0
 Wire Wire Line
 	2700 4000 2550 4000
 Wire Wire Line
-	2250 5150 2250 4200
+	2250 5150 2250 4950
 Wire Wire Line
 	2250 4200 1900 4200
 Connection ~ 2700 4000
@@ -1032,4 +1032,54 @@ Wire Wire Line
 	3250 2350 2250 2350
 Wire Wire Line
 	2250 1300 2250 2350
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5C1393AB
+P 2250 4950
+F 0 "TP9" V 2353 5024 50  0000 C CNN
+F 1 "OCS4_N" V 2354 5024 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2450 4950 50  0001 C CNN
+F 3 "~" H 2450 4950 50  0001 C CNN
+	1    2250 4950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2250 4950
+Wire Wire Line
+	2250 4950 2250 4200
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5C1395BF
+P 2000 5450
+F 0 "TP10" V 2103 5524 50  0000 C CNN
+F 1 "OCS5_N" V 2104 5524 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2200 5450 50  0001 C CNN
+F 3 "~" H 2200 5450 50  0001 C CNN
+	1    2000 5450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2000 5450
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5C13A00E
+P 2150 2550
+F 0 "TP8" V 2150 2738 50  0000 L CNN
+F 1 "OCS3_N" V 2254 2624 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2350 2550 50  0001 C CNN
+F 3 "~" H 2350 2550 50  0001 C CNN
+	1    2150 2550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2150 2550
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5C13A268
+P 2250 1300
+F 0 "TP7" H 2308 1374 50  0000 L CNN
+F 1 "OSC2_N" V 2354 1374 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2450 1300 50  0001 C CNN
+F 3 "~" H 2450 1300 50  0001 C CNN
+	1    2250 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2250 1300
 $EndSCHEMATC

@@ -69,7 +69,7 @@ MCU_SWDIO
 Text Label 5550 3100 0    50   ~ 0
 MCU_SWDCLK
 Wire Wire Line
-	6700 3600 5450 3600
+	6700 3600 6450 3600
 Text Label 5600 3600 0    50   ~ 0
 VBUSDETECT
 Text HLabel 5995 2800 2    50   Input ~ 0
@@ -127,7 +127,7 @@ U 1 1 5BD5D823
 P 6700 1900
 F 0 "J9" H 6780 1892 50  0000 L CNN
 F 1 "SWD" H 6780 1801 50  0000 L CNN
-F 2 "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" H 6700 1900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6700 1900 50  0001 C CNN
 F 3 "~" H 6700 1900 50  0001 C CNN
 	1    6700 1900
 	1    0    0    -1  
@@ -273,9 +273,9 @@ Wire Wire Line
 Wire Wire Line
 	5400 2250 5400 2100
 Wire Wire Line
-	5450 3500 6700 3500
+	5450 3500 6300 3500
 Wire Wire Line
-	5450 3400 6700 3400
+	5450 3400 6450 3400
 $Comp
 L Power_Extra:VDDMCU #PWR057
 U 1 1 5BD6EF44
@@ -401,8 +401,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 850  2100 900 
 Connection ~ 1800 850 
-Wire Wire Line
-	4950 2100 5400 2100
 NoConn ~ 3800 3100
 NoConn ~ 3800 3000
 NoConn ~ 3800 2700
@@ -416,7 +414,7 @@ U 1 1 5BDBABA3
 P 3150 3400
 F 0 "SW1" H 3150 3685 50  0000 C CNN
 F 1 "MCU_RESET" H 3150 3594 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 3150 3600 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 3150 3600 50  0001 C CNN
 F 3 "" H 3150 3600 50  0001 C CNN
 	1    3150 3400
 	1    0    0    -1  
@@ -471,7 +469,7 @@ U 1 1 5C07D882
 P 3100 2600
 F 0 "J10" H 3100 2300 50  0000 C CNN
 F 1 "DBG_UART" V 3200 2550 50  0000 C CNN
-F 2 "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" H 3100 2600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3100 2600 50  0001 C CNN
 F 3 "~" H 3100 2600 50  0001 C CNN
 	1    3100 2600
 	-1   0    0    1   
@@ -510,4 +508,176 @@ Wire Wire Line
 	3300 2400 3350 2400
 Wire Wire Line
 	3350 2400 3350 2300
+$Comp
+L Connector:TestPoint TP14
+U 1 1 5C13D6ED
+P 1600 1750
+F 0 "TP14" V 1600 1938 50  0000 L CNN
+F 1 "PORT2_EN" V 1645 1938 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 1750 50  0001 C CNN
+F 3 "~" H 1800 1750 50  0001 C CNN
+	1    1600 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5C13F150
+P 1600 1850
+F 0 "TP15" V 1600 2038 50  0000 L CNN
+F 1 "PORT3_EN" V 1645 2038 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 1850 50  0001 C CNN
+F 3 "~" H 1800 1850 50  0001 C CNN
+	1    1600 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5C13F17E
+P 1600 1950
+F 0 "TP16" V 1600 2138 50  0000 L CNN
+F 1 "PORT4_EN" V 1645 2138 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 1950 50  0001 C CNN
+F 3 "~" H 1800 1950 50  0001 C CNN
+	1    1600 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5C13F1AE
+P 1600 2050
+F 0 "TP17" V 1600 2238 50  0000 L CNN
+F 1 "PORT5_EN" V 1645 2238 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 2050 50  0001 C CNN
+F 3 "~" H 1800 2050 50  0001 C CNN
+	1    1600 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP18
+U 1 1 5C13F1E0
+P 1600 2150
+F 0 "TP18" V 1600 2338 50  0000 L CNN
+F 1 "PORT2_PWR" V 1645 2338 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 2150 50  0001 C CNN
+F 3 "~" H 1800 2150 50  0001 C CNN
+	1    1600 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP19
+U 1 1 5C13F214
+P 1600 2250
+F 0 "TP19" V 1600 2438 50  0000 L CNN
+F 1 "PORT3_PWR" V 1645 2438 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 2250 50  0001 C CNN
+F 3 "~" H 1800 2250 50  0001 C CNN
+	1    1600 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP20
+U 1 1 5C13F24E
+P 1600 2350
+F 0 "TP20" V 1600 2538 50  0000 L CNN
+F 1 "PORT4_PWR" V 1645 2538 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 2350 50  0001 C CNN
+F 3 "~" H 1800 2350 50  0001 C CNN
+	1    1600 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP21
+U 1 1 5C13F292
+P 1600 2450
+F 0 "TP21" V 1600 2638 50  0000 L CNN
+F 1 "PORT5_PWR" V 1645 2638 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1800 2450 50  0001 C CNN
+F 3 "~" H 1800 2450 50  0001 C CNN
+	1    1600 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5C13F319
+P 6450 3600
+F 0 "TP13" H 6392 3673 50  0000 R CNN
+F 1 "VBUS_DETECT" V 6495 3788 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6650 3600 50  0001 C CNN
+F 3 "~" H 6650 3600 50  0001 C CNN
+	1    6450 3600
+	-1   0    0    1   
+$EndComp
+Text HLabel 1200 1750 0    50   Input ~ 0
+PORT2_EN
+Text HLabel 1200 1850 0    50   Input ~ 0
+PORT3_EN
+Text HLabel 1200 1950 0    50   Input ~ 0
+PORT4_EN
+Text HLabel 1200 2050 0    50   Input ~ 0
+PORT5_EN
+Text HLabel 1200 2150 0    50   Input ~ 0
+PORT2_PWR
+Text HLabel 1200 2250 0    50   Input ~ 0
+PORT3_PWR
+Text HLabel 1200 2350 0    50   Input ~ 0
+PORT4_PWR
+Text HLabel 1200 2450 0    50   Input ~ 0
+PORT5_PWR
+Connection ~ 6450 3600
+Wire Wire Line
+	6450 3600 5450 3600
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5C13FAE8
+P 6450 3350
+F 0 "TP12" H 6500 3450 50  0000 L CNN
+F 1 "USB_MCU_D+" V 6495 3538 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6650 3350 50  0001 C CNN
+F 3 "~" H 6650 3350 50  0001 C CNN
+	1    6450 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6450 3400
+Wire Wire Line
+	6450 3400 6700 3400
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5C13FB84
+P 6300 3350
+F 0 "TP11" H 6100 3450 50  0000 L CNN
+F 1 "USB_MCU_D-" V 6345 3538 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6500 3350 50  0001 C CNN
+F 3 "~" H 6500 3350 50  0001 C CNN
+	1    6300 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 3500
+Wire Wire Line
+	6300 3500 6700 3500
+Wire Wire Line
+	6300 3500 6300 3350
+Wire Wire Line
+	6450 3350 6450 3400
+Wire Wire Line
+	1600 1750 1200 1750
+Wire Wire Line
+	1200 1850 1600 1850
+Wire Wire Line
+	1600 1950 1200 1950
+Wire Wire Line
+	1200 2050 1600 2050
+Wire Wire Line
+	1600 2150 1200 2150
+Wire Wire Line
+	1200 2250 1600 2250
+Wire Wire Line
+	1600 2350 1200 2350
+Wire Wire Line
+	1200 2450 1600 2450
+Wire Wire Line
+	4950 2100 5400 2100
+Text Label 3350 2500 0    50   ~ 0
+UART_RX
+Text Label 3350 2600 0    50   ~ 0
+UART_TX
 $EndSCHEMATC
